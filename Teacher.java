@@ -1,3 +1,4 @@
+//the teacher class
 class Teacher extends Person {
 
 
