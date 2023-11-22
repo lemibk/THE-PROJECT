@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Person extends Nameable {
     int id;
     String name = "unknown";
@@ -40,5 +43,14 @@ public class Person extends Nameable {
     @Override
     public String getCorrectName() {
         return name;
+    }
+    List<Rental> rentals = new ArrayList<>();
+    public void addRental(Rental rental) {
+        rentals.add(rental);
+    }
+
+
+    public List<Rental> getRentals() {
+        return rentals;
     }
 }
